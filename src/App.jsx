@@ -1,12 +1,12 @@
 
 import './App.css'
+import { Navbar } from './components/navbar/navbar'
 
 function App() {
   return (
-   <div>
-     <h1>Hello world!</h1>
-     <p>This is a basic project structure to create a landing page with React. For Web Development Specialist test.</p>
-   </div>
+   <main>
+      <Navbar />
+   </main>
   )
 }
 

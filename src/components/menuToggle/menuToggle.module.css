@@ -1,0 +1,33 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.line {
+  stroke: hsl(0, 0%, 13%);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transform: translateY(0) rotate(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Aseguramos que la transformación se haga relativo al centro */
+  transform-origin: center;
+}
+
+/* Transformación de la línea superior: se mueve al centro y rota 45° */
+.openLine1 {
+  transform: translateY(5px)  translateX(-3px) rotate(45deg);
+  transform-origin: center;
+}
+
+/* La línea del medio desaparece */
+.openLine2 {
+  opacity: 0;
+}
+
+/* Transformación de la línea inferior: se mueve al centro y rota -45° */
+.openLine3 {
+  transform: translateY(-5.5px) rotate(-45deg);
+  transform-origin: center;
+}
